@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="50368" started-at="2021-07-16T17:20:24 IST" finished-at="2021-07-16T17:21:14 IST">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.Runner@371a67ec]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Default test" duration-ms="50368" started-at="2021-07-16T17:20:24 IST" finished-at="2021-07-16T17:21:14 IST">
+      <class name="testrunner.Runner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testrunner.Runner@371a67ec]" name="setUpClass" is-config="true" duration-ms="1594" started-at="2021-07-16T17:20:24 IST" finished-at="2021-07-16T17:20:25 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.Runner@371a67ec]" name="runScenario" duration-ms="48578" started-at="2021-07-16T17:20:26 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-07-16T17:21:14 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["As a user if I enter valid username and invalid password and click login page should throw an error"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at stepDefinitions.SearchTest.close_the_browser(SearchTest.java:64)
+at ✽.close the browser(file:///C:/Users/Nitheesha/Desktop/User1/E-CommerceBDD/./src/test/java/features/Login.feature:21)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testrunner.Runner@371a67ec]" name="tearDownClass" is-config="true" duration-ms="47" started-at="2021-07-16T17:21:14 IST" finished-at="2021-07-16T17:21:14 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testrunner.Runner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
