@@ -1,44 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="50368" started-at="2021-07-16T17:20:24 IST" finished-at="2021-07-16T17:21:14 IST">
+  <suite name="Default suite" duration-ms="52127" started-at="2021-07-19T17:53:59 IST" finished-at="2021-07-19T17:54:52 IST">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.Runner@371a67ec]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.Runner@1e7c7811]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="50368" started-at="2021-07-16T17:20:24 IST" finished-at="2021-07-16T17:21:14 IST">
+    <test name="Default test" duration-ms="52127" started-at="2021-07-19T17:53:59 IST" finished-at="2021-07-19T17:54:52 IST">
       <class name="testrunner.Runner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testrunner.Runner@371a67ec]" name="setUpClass" is-config="true" duration-ms="1594" started-at="2021-07-16T17:20:24 IST" finished-at="2021-07-16T17:20:25 IST">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testrunner.Runner@1e7c7811]" name="setUpClass" is-config="true" duration-ms="1892" started-at="2021-07-19T17:54:00 IST" finished-at="2021-07-19T17:54:01 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.Runner@371a67ec]" name="runScenario" duration-ms="48578" started-at="2021-07-16T17:20:26 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-07-16T17:21:14 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.Runner@1e7c7811]" name="runScenario" duration-ms="49572" started-at="2021-07-19T17:54:02 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-07-19T17:54:51 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA["As a user if I enter valid username and invalid password and click login page should throw an error"]]>
+                <![CDATA[""]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Optional[Login Feature]"]]>
+                <![CDATA["Optional[Shop feature]"]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at stepDefinitions.SearchTest.close_the_browser(SearchTest.java:64)
-at ✽.close the browser(file:///C:/Users/Nitheesha/Desktop/User1/E-CommerceBDD/./src/test/java/features/Login.feature:21)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testrunner.Runner@371a67ec]" name="tearDownClass" is-config="true" duration-ms="47" started-at="2021-07-16T17:21:14 IST" finished-at="2021-07-16T17:21:14 IST">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testrunner.Runner@1e7c7811]" name="tearDownClass" is-config="true" duration-ms="484" started-at="2021-07-19T17:54:51 IST" finished-at="2021-07-19T17:54:52 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

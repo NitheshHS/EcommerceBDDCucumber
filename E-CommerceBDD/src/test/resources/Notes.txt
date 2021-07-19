@@ -1,0 +1,47 @@
+Generating a report in cucumber
+In order to generate cucumber report we go for plugin cucumber option where we can provide key aand value
+key:- format of file
+value:- path of file
+plugin={"html:target/file.html"}
+
+What is the use of Background keyword in cucumber?
+If we have common steps in feature file like launching browser or login we can use background
+
+Scenario: Cheak whether the Price Slider working correct or not in Shop feature
+Given as per user open the browser:- Hook
+
+Given enter the URL
+And click on Shop Menu 
+When Shop page is displayed i will go on price slider
+And Adjust the slider 150 to 350
+And Click on filter button
+Then verify the product price between 150 to 350 or not
+
+public class Hook {
+	/*
+	 * 2. Launch the browser
+        1. Exceute before scenario
+	 */
+	@Before(order = 0)
+	public void beforeSceanrio(){
+		System.out.println("Exceute before scenario");
+	}
+	
+	@Before(order=1)
+	public void setUp(){
+		System.out.println("Launch the browser");
+	}
+	/*
+	 * 2.Exceute after scenario
+1. close the browser instance
+	 */
+	@After(order=1)
+	public void tearDown() {
+		System.out.println("close the browser instance");
+	}
+
+	@After(order=0)
+	public void afterSceanrio() {
+		System.out.println("Exceute after scenario");
+	}
+}

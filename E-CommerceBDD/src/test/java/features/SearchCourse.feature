@@ -1,9 +1,11 @@
 Feature: Search Course feature
 
-@RegressionTest @End2End
-  Scenario Outline: As a user I want search for multiple course and get the title of the course
+  Background: 
     Given I want launch the "chrome" browser
     And Enter the url "http://practice.automationtesting.in/"
+
+  @RegressionTest
+  Scenario Outline: As a user I want search for multiple course and get the title of the course
     When home page is displayed I want search for "<course>"
     And get count of each course and title of course
     Then verify in the search result "<course>" name is there or not
@@ -17,8 +19,6 @@ Feature: Search Course feature
 
   @SmokeTest
   Scenario: As a valid after login fill all the account details
-    Given I want launch the "firefox" browser
-    And Enter the url "http://practice.automationtesting.in/"
     And go to my account tab
     When login page is displayed enter the username "nitheshdemo@gmail.com" and password "Nithesh@040598"
     And click on login
