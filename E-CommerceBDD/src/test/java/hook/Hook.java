@@ -7,9 +7,12 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 import com.ecommerce.baseutils.Base;
 import com.ecommerce.baseutils.FileUtility;
+import com.ecommerce.baseutils.WebDriverUtility;
+import com.ecommerce.pageobjects.PageObjectManager;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
+import io.cucumber.java.Scenario;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Hook {
@@ -21,7 +24,9 @@ public class Hook {
 	@Before
 	public void setUp() throws Throwable{
 		base.fUtil=new FileUtility();
-		String browser=base.fUtil.getKeyValue("browser");
+		base.webUtility=new WebDriverUtility();
+		//String browser=base.fUtil.getKeyValue("browser");
+		String browser=System.getProperty("BROWSER");
 		if(browser.equals("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			base.driver=new ChromeDriver();
@@ -32,10 +37,15 @@ public class Hook {
 		}
 		base.driver.manage().window().maximize();
 		base.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		base.pageObjManager=new PageObjectManager(base.driver);
 	}
 
 	@After
-	public void tearDown() {
+	public void tearDown(Scenario scenario) {
+		if(scenario.isFailed()) {
+			byte[] screenshot = base.webUtility.takeScreenshot(base.driver);
+			scenario.attach(screenshot, "image/png", scenario.getName());
+		}
 		base.driver.quit();
 	}
 

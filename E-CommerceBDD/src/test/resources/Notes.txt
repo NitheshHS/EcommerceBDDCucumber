@@ -45,3 +45,54 @@ public class Hook {
 		System.out.println("Exceute after scenario");
 	}
 }
+
+
+
+2. Webdriver utility
+3. Page object model
+4. extent report
+5. Framework architecture
+
+Webdriver utility:- It is a utilitybclass for webdriver methods
+1. Handling dropdown
+2. handling frame
+3. handling multiple window
+4. Taking screenshot
+5. Mouse hover action
+6. drag and drop
+7. Handling slider bar
+8. handling alert
+
+1. taking screen shot for failed screnario
+@After
+public void tearDown(Scenario scenario){
+if(scenario.isFailed){
+byte[] screenshot = base.webUtility.takeScreenshot(base.driver);
+scenario.attach(screenshot, "image/png", scenario.getName());
+}
+}
+
+
+Developing a pom class
+1. Identify all webelemenet using @findBy and provide access specifier as private
+2. In order to get those private WebElement provide getters
+3. Provide business logic if neccessory
+4. Provide a constructor for initializing the webElement
+
+How do re run failed test script?
+provide the path of rerun.txt file
+
+plugin={"rerun.txt"}
+
+
+
+
+
+
+
+
+
+
+
+
+
