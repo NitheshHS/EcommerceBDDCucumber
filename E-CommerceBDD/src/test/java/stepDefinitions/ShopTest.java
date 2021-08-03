@@ -9,6 +9,7 @@ import org.testng.Assert;
 
 import com.ecommerce.baseutils.Base;
 import com.ecommerce.pageobjects.HomePage;
+import com.ecommerce.pageobjects.PageObjectManager;
 import com.ecommerce.pageobjects.ShopPage;
 
 import io.cucumber.java.en.Given;
@@ -29,7 +30,7 @@ public class ShopTest {
 	    
 	@Given("click on Shop Menu")
 	public void click_on_shop_menu() {
-		base.homePage=base.pageObjManager.initHomePage();
+		base.homePage=PageObjectManager.initHomePage();
 		base.homePage.getShopLink().click();
 	}
 	@When("Shop page is displayed i will go on price slider")

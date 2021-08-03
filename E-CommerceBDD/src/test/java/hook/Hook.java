@@ -25,8 +25,8 @@ public class Hook {
 	public void setUp() throws Throwable{
 		base.fUtil=new FileUtility();
 		base.webUtility=new WebDriverUtility();
-		//String browser=base.fUtil.getKeyValue("browser");
-		String browser=System.getProperty("BROWSER");
+		String browser=base.fUtil.getKeyValue("browser");
+		//String browser=System.getProperty("BROWSER");
 		if(browser.equals("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			base.driver=new ChromeDriver();
@@ -37,7 +37,7 @@ public class Hook {
 		}
 		base.driver.manage().window().maximize();
 		base.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		base.pageObjManager=new PageObjectManager(base.driver);
+		//base.pageObjManager=new PageObjectManager(base.driver);
 	}
 
 	@After

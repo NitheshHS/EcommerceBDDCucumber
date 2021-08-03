@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"></span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jul 20, 2021 12:52:31 PM</span></a>
+<a href="#"><span class="badge badge-primary">Jul 29, 2021 09:15:04 PM</span></a>
 </li>
 </ul>
 </div>
@@ -86,7 +86,7 @@
           <div class="test-detail">
             <p class="name">Shop feature</p>
             <p class="text-sm">
-              <span>12:52:34 PM</span> / <span>31:33:829</span>
+              <span>21:15:05 PM</span> / <span>30:00:404</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -95,9 +95,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">Shop feature</h5>
-<span class='badge badge-success'>07.20.2021 12:52:34</span>
-<span class='badge badge-danger'>07.20.2021 12:54:08</span>
-<span class='badge badge-default'>31:33:829</span>
+<span class='badge badge-success'>07.29.2021 21:15:05</span>
+<span class='badge badge-danger'>07.29.2021 21:15:06</span>
+<span class='badge badge-default'>30:00:404</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 </div>
 <div class="m-t-10 m-l-5"></div>
@@ -108,61 +108,37 @@
     <div class="card-header" role="tab">
       <div class="card-title">
         <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>As a user I will drag the slider for filtering the price</div>
-          <div class="status-avatar float-right mr-4">
-            <i class="fa fa-paperclip"></i>
-          </div>
       </div>
     </div>
         <div class="">
           <div class="card-body">
-              <div class="step pass-bg" title="stepDefinitions.ShopTest.enter_the_url(java.lang.String)">
-                <span>Given enter the URL "http://practice.automationtesting.in/"</span>
+              <div class="step fail-bg" >
+                <span>hook.Hook.setUp()</span>
       <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepDefinitions.ShopTest.click_on_shop_menu()">
-                <span>And click on Shop Menu</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepDefinitions.ShopTest.shop_page_is_displayed_i_will_go_on_price_slider()">
-                <span>When Shop page is displayed i will go on price slider</span>
-      <div>
-      </div>
-              </div>
-              <div class="step fail-bg" title="stepDefinitions.ShopTest.adjust_the_slider_to(java.lang.Integer,java.lang.Integer)">
-                <span>And Adjust the slider 150 to 350</span>
-      <div>
-        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='ui-slider-handle ui-state-default ui-corner-all'][2]"}
-  (Session info: chrome=91.0.4472.124)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-GK61F68', ip: '192.168.43.120', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\NITHEE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63552}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 525039c6f9febf099a2a488fa3c2d5bf
-*** Element info: {Using=xpath, value=//span[@class='ui-slider-handle ui-state-default ui-corner-all'][2]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy20.getAttribute(Unknown Source)
-	at stepDefinitions.ShopTest.adjust_the_slider_to(ShopTest.java:42)
-	at ?.Adjust the slider 150 to 350(file:///C:/Users/Nitheesha/git/EcommerceBDD/E-CommerceBDD/./src/test/java/features/Shop.feature:9)
+        <textarea disabled class="code-block">java.lang.NullPointerException
+	at hook.Hook.setUp(Hook.java:30)
 </textarea>
       
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ShopTest.enter_the_url(java.lang.String)">
+                <span>Given enter the URL "http://practice.automationtesting.in/"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ShopTest.click_on_shop_menu()">
+                <span>And click on Shop Menu</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ShopTest.shop_page_is_displayed_i_will_go_on_price_slider()">
+                <span>When Shop page is displayed i will go on price slider</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ShopTest.adjust_the_slider_to(java.lang.Integer,java.lang.Integer)">
+                <span>And Adjust the slider 150 to 350</span>
+      <div>Step skipped
       </div>
               </div>
               <div class="step skip-bg" title="stepDefinitions.ShopTest.click_on_filter_button()">
@@ -175,14 +151,15 @@ Session ID: 525039c6f9febf099a2a488fa3c2d5bf
       <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" >
+              <div class="step fail-bg" >
                 <span>hook.Hook.tearDown(io.cucumber.java.Scenario)</span>
       <div>
-          <div class="row mb-3"><div class="col-md-3">
-    <img data-featherlight='test-output/embedded1.png' src="test-output/embedded1.png">
-    
-    </div></div>
-</div>
+        <textarea disabled class="code-block">java.lang.NullPointerException
+	at com.ecommerce.baseutils.WebDriverUtility.takeScreenshot(WebDriverUtility.java:56)
+	at hook.Hook.tearDown(Hook.java:46)
+</textarea>
+      
+      </div>
               </div>
           </div>
         </div>
@@ -190,29 +167,48 @@ Session ID: 525039c6f9febf099a2a488fa3c2d5bf
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="11"><span class="badge log pass-bg mr-2">Pass</span>As a user I will apply default sort in shop page</div>
+        <div class="node" id="11"><span class="badge log fail-bg mr-2">Fail</span>As a user I will apply default sort in shop page</div>
       </div>
     </div>
-        <div class="collapse">
+        <div class="">
           <div class="card-body">
-              <div class="step pass-bg" title="stepDefinitions.ShopTest.enter_the_url(java.lang.String)">
+              <div class="step fail-bg" >
+                <span>hook.Hook.setUp()</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException
+	at hook.Hook.setUp(Hook.java:30)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.ShopTest.enter_the_url(java.lang.String)">
                 <span>Given enter the URL "http://practice.automationtesting.in/"</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="stepDefinitions.ShopTest.home_is_displayed_click_on_shop()">
+              <div class="step skip-bg" title="stepDefinitions.ShopTest.home_is_displayed_click_on_shop()">
                 <span>When Home is displayed click on shop</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="stepDefinitions.ShopTest.select_default_sorting_dropdown_and_select(java.lang.String)">
+              <div class="step skip-bg" title="stepDefinitions.ShopTest.select_default_sorting_dropdown_and_select(java.lang.String)">
                 <span>And select default sorting dropdown and select "Sort by popularity"</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="stepDefinitions.ShopTest.get_all_the_book_name_and_print_in_console()">
+              <div class="step skip-bg" title="stepDefinitions.ShopTest.get_all_the_book_name_and_print_in_console()">
                 <span>Then get all the book name and print in console</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step fail-bg" >
+                <span>hook.Hook.tearDown(io.cucumber.java.Scenario)</span>
       <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException
+	at com.ecommerce.baseutils.WebDriverUtility.takeScreenshot(WebDriverUtility.java:56)
+	at hook.Hook.tearDown(Hook.java:46)
+</textarea>
+      
       </div>
               </div>
           </div>
@@ -243,12 +239,12 @@ Session ID: 525039c6f9febf099a2a488fa3c2d5bf
 <span class="meta">
 <span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">org.openqa.selenium.NoSuchElementException</p>
+<p class="name">java.lang.NullPointerException</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>org.openqa.selenium.NoSuchElementException</h4>
+<h4>java.lang.NullPointerException</h4>
 <span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -262,11 +258,41 @@ Session ID: 525039c6f9febf099a2a488fa3c2d5bf
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>12:53:09 PM</td>
+<td>21:15:05 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='7'>And Adjust the slider 150 to 350</a>
+<a href="#" class="linked" test-id='1' id='3'>hook.Hook.setUp()</a>
 <div class="">
-<span class="badge badge-default">Shop feature.As a user I will drag the slider for filtering the price.And Adjust the slider 150 to 350</span>
+<span class="badge badge-default">Shop feature.As a user I will drag the slider for filtering the price.hook.Hook.setUp()</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:15:06 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='10'>hook.Hook.tearDown(io.cucumber.java.Scenario)</a>
+<div class="">
+<span class="badge badge-default">Shop feature.As a user I will drag the slider for filtering the price.hook.Hook.tearDown(io.cucumber.java.Scenario)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:15:06 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='12'>hook.Hook.setUp()</a>
+<div class="">
+<span class="badge badge-default">Shop feature.As a user I will apply default sort in shop page.hook.Hook.setUp()</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:15:06 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='17'>hook.Hook.tearDown(io.cucumber.java.Scenario)</a>
+<div class="">
+<span class="badge badge-default">Shop feature.As a user I will apply default sort in shop page.hook.Hook.tearDown(io.cucumber.java.Scenario)</span>
 </div>
 </td>
 </tr>
@@ -287,13 +313,13 @@ Session ID: 525039c6f9febf099a2a488fa3c2d5bf
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jul 20, 2021 12:52:31 PM</h3>
+<h3>Jul 29, 2021 09:15:04 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jul 20, 2021 12:54:10 PM</h3>
+<h3>Jul 29, 2021 09:15:06 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -344,9 +370,9 @@ Session ID: 525039c6f9febf099a2a488fa3c2d5bf
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='50%'><b>1</b> scenarios passed</small></div>
+<div><small data-tooltip='0%'><b>0</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='50%'><b>1</b> scenarios failed,
+<small data-tooltip='100%'><b>2</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -364,10 +390,10 @@ Session ID: 525039c6f9febf099a2a488fa3c2d5bf
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='72%'><b>8</b> steps passed</small></div>
+<div><small data-tooltip='0%'><b>0</b> steps passed</small></div>
 <div>
-<small data-tooltip='9%'><b>1</b> steps failed,
-<b>2</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='28%'><b>4</b> steps failed,
+<b>10</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -383,7 +409,7 @@ Session ID: 525039c6f9febf099a2a488fa3c2d5bf
 </div></div>
 <script>
 var timeline = {
-"Shop feature":93.829
+"Shop feature":0.404
 };
 </script>
 <div class="row">
@@ -397,16 +423,16 @@ failParent: 1,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 1,
-failChild: 1,
+passChild: 0,
+failChild: 2,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 8,
-failGrandChild: 1,
+passGrandChild: 0,
+failGrandChild: 4,
 warningGrandChild: 0,
-skipGrandChild: 2,
+skipGrandChild: 10,
 infoGrandChild: 0,
 eventsCount: 5,
 };
