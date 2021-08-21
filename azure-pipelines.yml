@@ -1,5 +1,5 @@
 # Maven
-- task: Maven@3
+ task: Maven@3
   inputs:
     mavenPomFile: 'E-CommerceBDD/pom.xml'
     goals: 'test'
@@ -16,13 +16,13 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java
 
 trigger:
-- master
+master
 
 pool:
   vmImage: ubuntu-latest
 
 steps:
-- task: Maven@3
+ task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
     mavenOptions: '-Xmx3072m'
