@@ -1,5 +1,5 @@
 # Maven
- task: Maven@3
+ -task: Maven@3
   inputs:
     mavenPomFile: 'E-CommerceBDD/pom.xml'
     goals: 'test'
