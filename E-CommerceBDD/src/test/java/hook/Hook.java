@@ -14,6 +14,7 @@ import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import io.qameta.allure.Attachment;
 
 public class Hook {
 	Base base;
@@ -44,10 +45,15 @@ public class Hook {
 	public void tearDown(Scenario scenario) {
 		if(scenario.isFailed()) {
 			byte[] screenshot = base.webUtility.takeScreenshot(base.driver);
+			saveScreenshot(screenshot);
 			scenario.attach(screenshot, "image/png", scenario.getName());
+			
 		}
 		base.driver.quit();
 	}
-
+	@Attachment(value = "Page screenshot", type = "image/png")
+	public byte[] saveScreenshot(byte[] screenShot) {
+	    return screenShot;
+	}
 	
 }

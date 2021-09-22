@@ -76,7 +76,11 @@
     <artifactId>allure-cucumber5-jvm</artifactId>
     <version>2.13.5</version>
 </dependency>
-
+<dependency>
+    <groupId>com.browserstack</groupId>
+    <artifactId>browserstack-local-java</artifactId>
+    <version>1.0.3</version>
+</dependency>
 	</dependencies>
 	
 	<build>
