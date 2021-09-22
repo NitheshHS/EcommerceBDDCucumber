@@ -2,19 +2,19 @@
 <testng-results skipped="0" failed="2" ignored="0" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3591" started-at="2021-07-29T21:15:03 IST" finished-at="2021-07-29T21:15:07 IST">
+  <suite name="Default suite" duration-ms="29640" started-at="2021-08-11T14:56:51 IST" finished-at="2021-08-11T14:57:21 IST">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.Runner@8646db9]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.Runner@6950ed69]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="3591" started-at="2021-07-29T21:15:03 IST" finished-at="2021-07-29T21:15:07 IST">
+    <test name="Default test" duration-ms="29640" started-at="2021-08-11T14:56:51 IST" finished-at="2021-08-11T14:57:21 IST">
       <class name="testrunner.Runner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testrunner.Runner@8646db9]" name="setUpClass" is-config="true" duration-ms="1541" started-at="2021-07-29T21:15:03 IST" finished-at="2021-07-29T21:15:05 IST">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testrunner.Runner@6950ed69]" name="setUpClass" is-config="true" duration-ms="2648" started-at="2021-08-11T14:56:51 IST" finished-at="2021-08-11T14:56:54 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.Runner@8646db9]" name="runScenario" duration-ms="789" started-at="2021-07-29T21:15:05 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-07-29T21:15:06 IST">
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.Runner@6950ed69]" name="runScenario" duration-ms="16273" started-at="2021-08-11T14:56:54 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-11T14:57:10 IST">
           <params>
             <param index="0">
               <value>
@@ -30,14 +30,18 @@
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-at hook.Hook.setUp(Hook.java:30)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy23.click(Unknown Source)
+at stepDefinitions.ShopTest.click_on_shop_menu(ShopTest.java:34)
+at ✽.click on Shop Menu(file:///C:/Users/Nitheesha/git/EcommerceBDD/E-CommerceBDD/./src/test/java/features/Shop.feature:7)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.Runner@8646db9]" name="runScenario" duration-ms="145" started-at="2021-07-29T21:15:06 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-07-29T21:15:06 IST">
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.Runner@6950ed69]" name="runScenario" duration-ms="9728" started-at="2021-08-11T14:57:10 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-11T14:57:20 IST">
           <params>
             <param index="0">
               <value>
@@ -53,14 +57,18 @@ at hook.Hook.setUp(Hook.java:30)
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-at hook.Hook.setUp(Hook.java:30)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy23.click(Unknown Source)
+at stepDefinitions.ShopTest.home_is_displayed_click_on_shop(ShopTest.java:62)
+at ✽.Home is displayed click on shop(file:///C:/Users/Nitheesha/git/EcommerceBDD/E-CommerceBDD/./src/test/java/features/Shop.feature:14)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testrunner.Runner@8646db9]" name="tearDownClass" is-config="true" duration-ms="1038" started-at="2021-07-29T21:15:06 IST" finished-at="2021-07-29T21:15:07 IST">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testrunner.Runner@6950ed69]" name="tearDownClass" is-config="true" duration-ms="883" started-at="2021-08-11T14:57:20 IST" finished-at="2021-08-11T14:57:21 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

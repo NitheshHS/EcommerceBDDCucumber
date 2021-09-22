@@ -13,7 +13,8 @@ import io.cucumber.testng.CucumberOptions;
 		monochrome = true,
 		plugin= {"pretty","html:target/SmokeTest.html",
 				"json:target/SmokeTest.json",
-				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
+				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
+				"io.qameta.allure.cucumber5jvm.AllureCucumber5Jvm:"}
 		
 		//tags = "not @RegressionTest"// not -> exclude and-> if both tag should be there in same scenario
 		//or-> it will exceute the scenario which is having any one of tag
